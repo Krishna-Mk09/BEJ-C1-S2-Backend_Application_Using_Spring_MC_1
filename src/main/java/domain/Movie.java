@@ -9,15 +9,18 @@ package domain;
 
 public class Movie {
 
+    // Declaring the variables.
     private String movieName;
     private String movieActor;
     private String movieActress;
     private int movieRating;
     private String movieType;
 
+    // This is a default constructor.
     public Movie() {
     }
 
+    // This is a constructor.
     public Movie(String movieName, String movieActor, String movieActress, int movieRating, String movieType) {
         this.movieName = movieName;
         this.movieActor = movieActor;
@@ -26,6 +29,7 @@ public class Movie {
         this.movieType = movieType;
     }
 
+    // This is a getter and setter method.
     public String getMovieName() {
         return movieName;
     }
@@ -66,14 +70,13 @@ public class Movie {
         this.movieType = movieType;
     }
 
+    /**
+     * The toString() method returns a string representation of the object
+     *
+     * @return The movieName, movieActor, movieActress, movieRating, and movieType are being returned.
+     */
     @Override
     public String toString() {
-        return "Movie{" +
-                "movieName='" + movieName + '\'' +
-                ", movieActor='" + movieActor + '\'' +
-                ", movieActress='" + movieActress + '\'' +
-                ", movieRating=" + movieRating +
-                ", movieType='" + movieType + '\'' +
-                '}';
+        return "Movie{" + "movieName='" + movieName + '\'' + ", movieActor='" + movieActor + '\'' + ", movieActress='" + movieActress + '\'' + ", movieRating=" + movieRating + ", movieType='" + movieType + '\'' + '}';
     }
 }
