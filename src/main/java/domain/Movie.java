@@ -5,9 +5,12 @@
  *
  */
 
-
 package domain;
 
 public class Movie {
-
+    private String movieName;
+    private String movieActor;
+    private String movieActress;
+    private int movieRating;
+    private String movieType;
 }
